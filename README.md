@@ -39,13 +39,38 @@ A modern, high-converting agency homepage built for **Raghav Web**, helping busi
    - Filterable projects with verified business results across SaaS Web Design, Local SEO, and E-commerce Ads.
 6. **Client Testimonials**:
    - Verified feedback from business leaders and founders.
-7. **Interactive Growth & ROI Calculator**:
+7. **Transparent Pricing Packages**:
+   - **Starter (₹4,999)**: Basic Website Development, Mobile Responsive, Basic SEO, WhatsApp Integration, Basic Support.
+   - **Growth (₹9,999 - Most Popular)**: Professional Website, SEO Optimization, Meta Ads Setup, GA4 Analytics, 1 Month Support.
+   - **Business (₹19,999)**: Premium Website, Advanced SEO, Meta Ads Management, Google Ads Setup, Social Media Marketing, 3 Months Support.
+8. **Interactive Growth & ROI Calculator**:
    - Real-time simulator for monthly marketing budget and projected revenue lift.
-8. **Final Call to Action**:
-   - *“Ready to Build What’s Next?”* with an embedded lead generation contact form and modal booking dialog.
+9. **Final Call to Action & Contact Form**:
+   - *“Ready to Build What’s Next?”* with lead generation form, direct WhatsApp card, and modal booking dialog.
+10. **Professional WhatsApp Integration**:
+    - `WhatsApp Only: +91 99294 85665` integrated across hero, header, floating quick-action widget, modal, and footer.
 
 ---
 
-## 💻 Quick Start & Preview
+## 🌐 How to Deploy Live on GitHub Pages
 
-Open [`index.html`](file:///c:/RAGHAVWEB/index.html) directly in any modern web browser (Google Chrome, Microsoft Edge, Safari, Firefox). Zero build tools or dependencies required.
+1. **Create a GitHub Repository**:
+   - Visit [github.com/new](https://github.com/new) and create a public repository (e.g. `raghav-web`).
+2. **Push your code**:
+   ```bash
+   git remote add origin https://github.com/<YOUR_USERNAME>/raghav-web.git
+   git push -u origin main
+   ```
+3. **Enable GitHub Pages**:
+   - Go to your repository **Settings** &rarr; **Pages** (in left sidebar).
+   - Under **Build and deployment** &rarr; **Branch**, select `main` and `/ (root)`.
+   - Click **Save**.
+4. **Your Live Website URL**:
+   Your site will be live at:
+   `https://<YOUR_USERNAME>.github.io/raghav-web/`
+
+---
+
+## 💻 Quick Local Preview
+
+Open [`index.html`](file:///c:/RAGHAVWEB/index.html) directly in any modern web browser. Zero build tools or dependencies required.
