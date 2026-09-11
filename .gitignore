@@ -1,0 +1,5 @@
+# Internal / Agent directories
+.agents/
+.DS_Store
+Thumbs.db
+*.log
