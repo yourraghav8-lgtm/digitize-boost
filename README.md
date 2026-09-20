@@ -59,10 +59,11 @@ A premium, modern multi-page digital agency website built for **RAVIX**, helping
 
 ---
 
-## 🌐 Live Website on GitHub Pages
+## 🌐 Live Website Links
 
-The website is deployed live on GitHub Pages:
-**[https://yourraghav8-lgtm.github.io/raghav-web/](https://yourraghav8-lgtm.github.io/raghav-web/)**
+- **Primary Custom Domain**: **[http://ravix.publicvm.com](http://ravix.publicvm.com)**
+- **GitHub Pages Repository**: **[https://github.com/yourraghav8-lgtm/digitize-boost](https://github.com/yourraghav8-lgtm/digitize-boost)**
+- **Direct GitHub Pages URL**: **[https://yourraghav8-lgtm.github.io/digitize-boost/](https://yourraghav8-lgtm.github.io/digitize-boost/)**
 
 ---
 
