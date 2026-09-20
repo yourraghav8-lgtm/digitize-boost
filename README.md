@@ -1,76 +1,71 @@
-# Build Digital Marketing by Raghav Web
+# RAVIX | Digital Growth & Marketing Agency
 
-A modern, high-converting agency homepage built for **Raghav Web**, helping businesses build their digital presence and achieve measurable growth online.
+A premium, modern multi-page digital agency website built for **RAVIX**, helping businesses establish their digital presence and achieve measurable growth online.
 
-![Raghav Web Preview](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80)
+![RAVIX Preview](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&auto=format&fit=crop&q=80)
 
 ---
 
 ## 🌟 Brand & Content Highlights
 
+- **Brand Name**: **RAVIX**
 - **Headline**: *“Build Your Digital Presence. Grow Your Business.”*
-- **Subheadline**: *“Raghav Web delivers strategic digital marketing, high-performance websites, SEO, social media marketing, and paid advertising that turn attention into measurable growth.”*
-- **Primary Action**: *“Get a Free Strategy Call”*
-- **Secondary Action**: *“View Our Services”*
-- **Visual Design**: Premium dark blue (`#060B18`, `#0B132B`, `#0F1B3D`) and crisp white typography with bright amber/gold (`#F59E0B`) call-to-action buttons for maximum conversion contrast.
+- **Subheadline**: *“RAVIX delivers strategic digital marketing, high-performance websites, SEO, social media marketing, and paid advertising that turn attention into measurable growth.”*
+- **Visual Aesthetic**:
+  - **Main Background**: Warm Cream (`#F7F3EA`)
+  - **Headings & Key Elements**: Rich Black (`#111111`)
+  - **Accent Color**: Vibrant Orange (`#FF5A36`)
+  - **Light Sections**: Off-White (`#FFFDF8`)
+  - **Secondary Text**: Muted Taupe-Gray (`#6B6862`)
+  - **Cards & Elevated Surfaces**: Soft Beige (`#EFEAE0`) with subtle hairline borders (`rgba(17, 17, 17, 0.08)`)
+- **Strict Visual Negative Constraints**:
+  - Zero dark navy, midnight blue, purple, or neon blue typical dark-tech styling.
+  - High-contrast, editorial, minimal, and memorable design.
 
 ---
 
-## 🚀 Sections Included
+## 🚀 Pages & Features Included
 
-1. **Bold Hero Section**:
-   - Live Growth Dashboard mockup showing real-time client performance (+340% organic traffic, 4.62% conversion rate, 5.20x ROAS, 850+ leads).
-   - Partner certification marquee (Google Ads, Meta Business Partner, WordPress & Webflow, Shopify, HubSpot & Klaviyo).
-2. **Core Services (6 Pillars)**:
-   - **Website Design**
+1. **Multi-Page Architecture**:
+   - [`index.html`](index.html): High-converting homepage featuring the hero section, interactive 3D smartphone showcase, 6 core services, 4 pillars, 4-stage process, portfolio, testimonials, ROI calculator, pricing, and contact.
+   - [`about.html`](about.html): In-depth agency story, philosophy (revenue over vanity), team operating principles, and comparison matrix (Traditional Agencies vs. RAVIX).
+   - [`services.html`](services.html): In-depth breakdown of all 6 core services with key deliverables grids and direct package links.
+   - [`contact.html`](contact.html): Dedicated consultation booking portal, WhatsApp concierge card, and agency FAQ accordion.
+
+2. **Interactive 3D Smartphone Device Mockup**:
+   - iPhone 16 Pro mockup with Dynamic Island notch and interactive 3-screen tab switcher:
+     - **Screen 1**: Mobile-Optimized Website (0.4s speed, 99.8% PageSpeed score).
+     - **Screen 2**: Meta & Google Ads Live Performance (4.8x ROAS, ₹4.8L+ revenue).
+     - **Screen 3**: WhatsApp Lead Inbound (real-time notification cards & pipeline counter).
+
+3. **Core Services (6 Pillars)**:
+   - **Website Design & CRO**
    - **SEO (Search Engine Optimization)**
-   - **Google Ads (PPC)**
-   - **Social Media Marketing**
-   - **Content Marketing**
-   - **Branding & Identity**
-3. **Why Choose Us (4 Pillars)**:
-   - **Data-Driven Strategy**
-   - **Custom Solutions**
-   - **Transparent Reporting**
-   - **Growth-Focused Execution**
-4. **4-Stage Process**:
-   - **Discover** &rarr; **Strategy** &rarr; **Build** &rarr; **Grow**
-5. **Portfolio / Recent Work**:
-   - Filterable projects with verified business results across SaaS Web Design, Local SEO, and E-commerce Ads.
-6. **Client Testimonials**:
-   - Verified feedback from business leaders and founders.
-7. **Transparent Pricing Packages**:
+   - **Google Ads (PPC & Performance Max)**
+   - **Social Media & Meta Ads**
+   - **Content Marketing & Email Funnels**
+   - **Branding & Visual Identity**
+
+4. **Transparent Pricing Packages**:
    - **Starter (₹4,999)**: Basic Website Development, Mobile Responsive, Basic SEO, WhatsApp Integration, Basic Support.
    - **Growth (₹9,999 - Most Popular)**: Professional Website, SEO Optimization, Meta Ads Setup, GA4 Analytics, 1 Month Support.
    - **Business (₹19,999)**: Premium Website, Advanced SEO, Meta Ads Management, Google Ads Setup, Social Media Marketing, 3 Months Support.
-8. **Interactive Growth & ROI Calculator**:
-   - Real-time simulator for monthly marketing budget and projected revenue lift.
-9. **Final Call to Action & Contact Form**:
-   - *“Ready to Build What’s Next?”* with lead generation form, direct WhatsApp card, and modal booking dialog.
-10. **Professional WhatsApp Integration**:
-    - `WhatsApp Only: +91 99294 85665` integrated across hero, header, floating quick-action widget, modal, and footer.
+
+5. **Interactive Growth & ROI Calculator**:
+   - Real-time simulator for monthly ad spend and projected revenue lift in INR (`₹`).
+
+6. **Professional WhatsApp Concierge**:
+   - `WhatsApp Only: +91 99294 85665` integrated across hero, header, sticky floating widget, modal, and footer.
 
 ---
 
-## 🌐 How to Deploy Live on GitHub Pages
+## 🌐 Live Website on GitHub Pages
 
-1. **Create a GitHub Repository**:
-   - Visit [github.com/new](https://github.com/new) and create a public repository (e.g. `raghav-web`).
-2. **Push your code**:
-   ```bash
-   git remote add origin https://github.com/<YOUR_USERNAME>/raghav-web.git
-   git push -u origin main
-   ```
-3. **Enable GitHub Pages**:
-   - Go to your repository **Settings** &rarr; **Pages** (in left sidebar).
-   - Under **Build and deployment** &rarr; **Branch**, select `main` and `/ (root)`.
-   - Click **Save**.
-4. **Your Live Website URL**:
-   Your site will be live at:
-   `https://<YOUR_USERNAME>.github.io/raghav-web/`
+The website is deployed live on GitHub Pages:
+**[https://yourraghav8-lgtm.github.io/raghav-web/](https://yourraghav8-lgtm.github.io/raghav-web/)**
 
 ---
 
-## 💻 Quick Local Preview
+## 💻 Local Preview
 
-Open [`index.html`](file:///c:/RAGHAVWEB/index.html) directly in any modern web browser. Zero build tools or dependencies required.
+Open [`index.html`](index.html) directly in any modern web browser. Zero build tools or dependencies required.

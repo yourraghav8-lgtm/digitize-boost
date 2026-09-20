@@ -1,26 +1,27 @@
 /* ==========================================================================
-   Build Digital Marketing by Raghav Web
-   Premium Dark Blue & White Theme with Bright Accent Colors
+   RAVIX | Digital Growth & Marketing Agency
+   Theme: Warm Cream (#F7F3EA), Rich Black (#111111), Vibrant Orange (#FF5A36)
+   Secondary: Off-White (#FFFDF8), Muted Taupe-Gray (#6B6862), Soft Beige (#EFEAE0)
    ========================================================================== */
 
 :root {
-  --color-bg-base: #060B18;         /* Deep Midnight Navy */
-  --color-bg-surface: #0B132B;      /* Dark Navy Surface */
-  --color-bg-card: #0F1B3D;         /* Dark Sapphire Card */
-  --color-bg-card-hover: #16244F;   /* Card Hover State */
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-glow: rgba(59, 130, 246, 0.35);
+  --color-bg-base: #F7F3EA;         /* Warm Cream Main Background */
+  --color-bg-surface: #FFFDF8;      /* Off-White Light Sections */
+  --color-bg-card: #EFEAE0;         /* Soft Beige Cards */
+  --color-bg-card-hover: #E8E2D6;   /* Card Hover State */
+  --color-text-primary: #111111;    /* Rich Black Headings & Elements */
+  --color-text-secondary: #6B6862;  /* Muted Taupe-Gray Secondary Text */
+  --color-border: rgba(17, 17, 17, 0.08); /* Subtle warm borders */
+  --color-border-dark: rgba(17, 17, 17, 0.15);
   
-  /* Primary Dark Blue & Royal Tones */
-  --color-blue-primary: #1D4ED8;
-  --color-blue-electric: #3B82F6;
-  --color-blue-cyan: #06B6D4;
+  /* Vibrant Accent Color */
+  --color-accent: #FF5A36;          /* Vibrant Orange */
+  --color-accent-hover: #E54926;
+  --color-accent-glow: rgba(255, 90, 54, 0.35);
 
-  /* Bright High-Conversion CTA Accent */
-  --color-accent-amber: #F59E0B;
-  --color-accent-gold: #FBBF24;
-  --color-accent-coral: #FF6B35;
-  --color-accent-emerald: #10B981;
+  /* WhatsApp Green */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #128C7E;
 }
 
 /* Base resets & typography */
@@ -28,7 +29,12 @@ html {
   scroll-behavior: smooth;
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--color-bg-base);
-  color: #F8FAFC;
+  color: var(--color-text-primary);
+}
+
+body {
+  background-color: #F7F3EA;
+  color: #111111;
 }
 
 /* Custom scrollbar */
@@ -36,107 +42,145 @@ html {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #060B18;
+  background: #F7F3EA;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1E293B;
+  background: #D5CEBE;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #B8B09F;
 }
 
-/* Background grid pattern */
+/* Background grid pattern (Warm & subtle) */
 .bg-grid-pattern {
   background-size: 48px 48px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+    linear-gradient(to right, rgba(17, 17, 17, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.04) 1px, transparent 1px);
 }
 
-/* Glowing Ambient Orbs */
+/* Ambient Radial Glows (Warm, subtle terracotta/orange and soft cream) */
 .glow-orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(140px);
   pointer-events: none;
   z-index: 0;
 }
 
-/* Premium Dark Blue Glassmorphic Cards */
-.glass-card {
-  background: rgba(15, 27, 61, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+/* Premium Warm Cards */
+.card-beige, .glass-card {
+  background: #EFEAE0;
   border: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px -4px rgba(17, 17, 17, 0.04);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.glass-card:hover {
-  border-color: rgba(59, 130, 246, 0.4);
-  box-shadow: 0 12px 35px -10px rgba(11, 27, 75, 0.7);
+.card-beige:hover, .glass-card:hover {
+  border-color: rgba(17, 17, 17, 0.16);
+  box-shadow: 0 16px 36px -8px rgba(17, 17, 17, 0.08);
   transform: translateY(-3px);
 }
 
-/* Text Gradients */
+/* Card Off-White Variant */
+.card-offwhite {
+  background: #FFFDF8;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px -4px rgba(17, 17, 17, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-offwhite:hover {
+  border-color: rgba(17, 17, 17, 0.18);
+  box-shadow: 0 16px 36px -8px rgba(17, 17, 17, 0.08);
+  transform: translateY(-3px);
+}
+
+/* Text Gradients & Highlights */
 .gradient-text {
-  background: linear-gradient(135deg, #FFFFFF 0%, #93C5FD 50%, #60A5FA 100%);
+  background: linear-gradient(135deg, #111111 0%, #3D3B38 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-text-accent {
-  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #FF6B35 100%);
+  background: linear-gradient(135deg, #FF5A36 0%, #E54926 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.gradient-text-cyan {
-  background: linear-gradient(135deg, #67E8F9 0%, #06B6D4 50%, #3B82F6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Bright Accent Buttons (High-Conversion CTAs) */
+/* Buttons */
 .btn-accent {
-  background: linear-gradient(135deg, #F59E0B 0%, #FF6B35 100%);
+  background-color: #FF5A36;
   color: #FFFFFF;
   font-weight: 700;
-  box-shadow: 0 8px 24px -4px rgba(245, 158, 11, 0.45);
+  box-shadow: 0 8px 24px -4px rgba(255, 90, 54, 0.35);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-accent:hover {
-  background: linear-gradient(135deg, #FBBF24 0%, #FF7F4D 100%);
-  box-shadow: 0 12px 32px -4px rgba(245, 158, 11, 0.65);
+  background-color: #E54926;
+  box-shadow: 0 12px 30px -4px rgba(255, 90, 54, 0.5);
   transform: translateY(-2px);
+  color: #FFFFFF;
 }
 
 .btn-accent:active {
   transform: translateY(0);
 }
 
-/* Secondary Button */
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.05);
-  color: #F8FAFC;
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #111111;
+  color: #FFFDF8;
+  font-weight: 700;
+  border: 1px solid #111111;
+  box-shadow: 0 4px 14px -2px rgba(17, 17, 17, 0.15);
   transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.3);
+  background: #252422;
+  border-color: #252422;
   color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px -2px rgba(17, 17, 17, 0.22);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #111111;
+  font-weight: 700;
+  border: 1.5px solid rgba(17, 17, 17, 0.2);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline:hover {
+  border-color: #111111;
+  background: #111111;
+  color: #FFFDF8;
   transform: translateY(-2px);
 }
 
 /* WhatsApp CTA Buttons */
 .btn-whatsapp {
-  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  background: #25D366;
   color: #FFFFFF;
   font-weight: 700;
-  box-shadow: 0 8px 24px -4px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.4);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   display: inline-flex;
   align-items: center;
@@ -144,8 +188,8 @@ html {
 }
 
 .btn-whatsapp:hover {
-  background: linear-gradient(135deg, #2ae770 0%, #17a090 100%);
-  box-shadow: 0 12px 30px -4px rgba(37, 211, 102, 0.6);
+  background: #20BA5A;
+  box-shadow: 0 12px 28px -4px rgba(37, 211, 102, 0.55);
   transform: translateY(-2px);
   color: #FFFFFF;
 }
@@ -155,10 +199,10 @@ html {
 }
 
 .btn-whatsapp-outline {
-  background: rgba(37, 211, 102, 0.1);
-  color: #25D366;
-  border: 1px solid rgba(37, 211, 102, 0.35);
-  font-weight: 600;
+  background: rgba(37, 211, 102, 0.08);
+  color: #128C7E;
+  border: 1.5px solid rgba(37, 211, 102, 0.45);
+  font-weight: 700;
   transition: all 0.25s ease;
   display: inline-flex;
   align-items: center;
@@ -166,9 +210,9 @@ html {
 }
 
 .btn-whatsapp-outline:hover {
-  background: rgba(37, 211, 102, 0.2);
-  border-color: rgba(37, 211, 102, 0.6);
-  color: #34E87B;
+  background: rgba(37, 211, 102, 0.16);
+  border-color: #25D366;
+  color: #0E6B60;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.25);
 }
@@ -176,7 +220,7 @@ html {
 /* Floating WhatsApp Button Animation */
 @keyframes whatsappPulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
   }
   70% {
     box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
@@ -189,7 +233,6 @@ html {
 .floating-whatsapp {
   animation: whatsappPulse 2.8s infinite;
 }
-
 
 /* Logo Marquee */
 @keyframes marqueeScroll {
@@ -204,14 +247,14 @@ html {
 .marquee-container {
   overflow: hidden;
   position: relative;
-  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
 }
 
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marqueeScroll 28s linear infinite;
+  animation: marqueeScroll 26s linear infinite;
 }
 
 .marquee-container:hover .marquee-track {
@@ -220,7 +263,7 @@ html {
 
 /* Accessibility Focus States */
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-  outline: 2px solid #F59E0B;
+  outline: 2px solid #FF5A36;
   outline-offset: 2px;
 }
 
@@ -245,13 +288,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   }
 }
 
-/* Custom Range Slider */
+/* Custom Range Slider for ROI Calculator */
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 8px;
-  background: #16244F;
+  background: #E2DDD2;
   border-radius: 9999px;
   outline: none;
   cursor: pointer;
@@ -260,44 +303,124 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background: #F59E0B;
-  border: 3px solid #FFFFFF;
-  box-shadow: 0 0 15px rgba(245, 158, 11, 0.8);
+  background: #FF5A36;
+  border: 3px solid #FFFDF8;
+  box-shadow: 0 4px 14px rgba(255, 90, 54, 0.55);
   cursor: grab;
-  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 input[type="range"]::-webkit-slider-thumb:hover {
-  transform: scale(1.15);
+  transform: scale(1.18);
+  box-shadow: 0 6px 18px rgba(255, 90, 54, 0.75);
 }
 
-/* Pricing Section Card Animations */
-#pricing .glass-card {
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease, box-shadow 0.35s ease;
-}
-
-#pricing .glass-card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(59, 130, 246, 0.5);
-  box-shadow: 0 20px 40px -15px rgba(29, 78, 216, 0.35);
-}
-
-@keyframes borderGlowPulse {
+/* Pricing Section Card Highlight Animation */
+@keyframes orangeBorderPulse {
   0%, 100% {
-    box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.3), 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px -4px rgba(255, 90, 54, 0.25), 0 16px 36px -8px rgba(17, 17, 17, 0.1);
   }
   50% {
-    box-shadow: 0 0 38px 2px rgba(245, 158, 11, 0.5), 0 25px 50px -10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 32px 0 rgba(255, 90, 54, 0.45), 0 20px 45px -8px rgba(17, 17, 17, 0.15);
   }
 }
 
-#pricing .border-amber-400 {
-  animation: borderGlowPulse 4s ease-in-out infinite;
+.pricing-highlight {
+  animation: orangeBorderPulse 3.5s ease-in-out infinite;
 }
 
-#pricing .border-amber-400:hover {
-  transform: translateY(-12px);
+/* ==========================================================================
+   Interactive 3D Smartphone Device Mockup
+   ========================================================================== */
+.phone-mockup-wrapper {
+  perspective: 1200px;
+}
+
+.phone-mockup {
+  position: relative;
+  width: 310px;
+  height: 620px;
+  background: #181716;
+  border-radius: 46px;
+  padding: 11px;
+  box-shadow: 
+    0 0 0 3px #3D3A37,
+    0 25px 60px -15px rgba(17, 17, 17, 0.35),
+    0 10px 25px -10px rgba(17, 17, 17, 0.2);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+}
+
+@media (min-width: 640px) {
+  .phone-mockup {
+    width: 330px;
+    height: 650px;
+    padding: 12px;
+    border-radius: 48px;
+  }
+}
+
+.phone-mockup:hover {
+  transform: translateY(-6px) rotateY(-3deg) rotateX(3deg);
+  box-shadow: 
+    0 0 0 3px #FF5A36,
+    0 35px 75px -15px rgba(255, 90, 54, 0.25),
+    0 20px 35px -10px rgba(17, 17, 17, 0.25);
+}
+
+.phone-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #FFFDF8;
+  border-radius: 36px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dynamic Island */
+.phone-dynamic-island {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 25px;
+  background: #111111;
+  border-radius: 20px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.phone-screen-tab {
+  display: none;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.phone-screen-tab::-webkit-scrollbar {
+  display: none;
+}
+
+.phone-screen-tab.active {
+  display: flex;
+  animation: fadeInScale 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Interactive tab buttons */
+.phone-switcher-btn {
+  transition: all 0.2s ease;
+}
+.phone-switcher-btn.active {
+  background-color: #FF5A36;
+  color: #FFFFFF;
+  border-color: #FF5A36;
+  box-shadow: 0 4px 12px rgba(255, 90, 54, 0.35);
 }

@@ -1,5 +1,5 @@
 /**
- * Build Digital Marketing by Raghav Web
+ * RAVIX | Digital Growth & Marketing Agency
  * Main Interactive Application Scripts
  */
 
@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
   initPortfolioFilter();
   initProcessTabs();
+  initPhoneMockupSwitcher();
   initContactForm();
   initStrategyModal();
   initAnimatedCounters();
@@ -56,10 +57,10 @@ function initStickyHeader() {
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 25) {
-      header.classList.add('bg-[#060B18]/95', 'backdrop-blur-md', 'border-b', 'border-white/10', 'shadow-2xl');
+      header.classList.add('bg-[#F7F3EA]/95', 'backdrop-blur-md', 'border-b', 'border-[#111111]/10', 'shadow-md');
       header.classList.remove('bg-transparent');
     } else {
-      header.classList.remove('bg-[#060B18]/95', 'backdrop-blur-md', 'border-b', 'border-white/10', 'shadow-2xl');
+      header.classList.remove('bg-[#F7F3EA]/95', 'backdrop-blur-md', 'border-b', 'border-[#111111]/10', 'shadow-md');
       header.classList.add('bg-transparent');
     }
   });
@@ -80,12 +81,12 @@ function initPortfolioFilter() {
 
       // Update active state
       filterBtns.forEach(b => {
-        b.classList.remove('bg-[#1D4ED8]', 'text-white', 'shadow-md');
-        b.classList.add('bg-white/5', 'text-gray-400', 'hover:bg-white/10');
+        b.classList.remove('bg-[#FF5A36]', 'text-white', 'shadow-md');
+        b.classList.add('bg-[#EFEAE0]', 'text-[#6B6862]', 'hover:bg-[#E8E2D6]');
       });
 
-      btn.classList.add('bg-[#1D4ED8]', 'text-white', 'shadow-md');
-      btn.classList.remove('bg-white/5', 'text-gray-400', 'hover:bg-white/10');
+      btn.classList.add('bg-[#FF5A36]', 'text-white', 'shadow-md');
+      btn.classList.remove('bg-[#EFEAE0]', 'text-[#6B6862]', 'hover:bg-[#E8E2D6]');
 
       // Filter cards
       cards.forEach(card => {
@@ -115,12 +116,12 @@ function initProcessTabs() {
       const stepIndex = btn.dataset.step;
 
       stepButtons.forEach(b => {
-        b.classList.remove('border-amber-500', 'bg-amber-500/10', 'text-white');
-        b.classList.add('border-white/10', 'bg-white/[0.02]', 'text-gray-400');
+        b.classList.remove('border-[#FF5A36]', 'bg-[#FF5A36]/10', 'text-[#111111]', 'font-bold');
+        b.classList.add('border-[#111111]/10', 'bg-[#FFFDF8]', 'text-[#6B6862]');
       });
 
-      btn.classList.add('border-amber-500', 'bg-amber-500/10', 'text-white');
-      btn.classList.remove('border-white/10', 'bg-white/[0.02]', 'text-gray-400');
+      btn.classList.add('border-[#FF5A36]', 'bg-[#FF5A36]/10', 'text-[#111111]', 'font-bold');
+      btn.classList.remove('border-[#111111]/10', 'bg-[#FFFDF8]', 'text-[#6B6862]');
 
       stepPanels.forEach(panel => {
         if (panel.id === `process-panel-${stepIndex}`) {
@@ -136,7 +137,41 @@ function initProcessTabs() {
 }
 
 /* --------------------------------------------------------------------------
-   5. Embedded Final Contact Form ("Ready to Build What's Next?")
+   5. Interactive 3D Smartphone Mockup Switcher
+   -------------------------------------------------------------------------- */
+function initPhoneMockupSwitcher() {
+  const switcherBtns = document.querySelectorAll('.phone-switcher-btn');
+  const screenTabs = document.querySelectorAll('.phone-screen-tab');
+
+  if (switcherBtns.length === 0 || screenTabs.length === 0) return;
+
+  switcherBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetScreen = btn.dataset.screen;
+
+      // Update button active state
+      switcherBtns.forEach(b => {
+        b.classList.remove('active', 'bg-[#FF5A36]', 'text-white');
+        b.classList.add('bg-[#EFEAE0]', 'text-[#6B6862]', 'hover:bg-[#E8E2D6]');
+      });
+
+      btn.classList.add('active', 'bg-[#FF5A36]', 'text-white');
+      btn.classList.remove('bg-[#EFEAE0]', 'text-[#6B6862]', 'hover:bg-[#E8E2D6]');
+
+      // Switch screen tabs
+      screenTabs.forEach(tab => {
+        if (tab.id === targetScreen) {
+          tab.classList.add('active');
+        } else {
+          tab.classList.remove('active');
+        }
+      });
+    });
+  });
+}
+
+/* --------------------------------------------------------------------------
+   6. Embedded Final Contact Form ("Ready to Build What's Next?")
    -------------------------------------------------------------------------- */
 function initContactForm() {
   const contactForm = document.getElementById('final-contact-form');
@@ -157,7 +192,7 @@ function initContactForm() {
         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
       </svg>
-      Sending Your Project Details...
+      Submitting Your Details...
     `;
 
     setTimeout(() => {
@@ -181,7 +216,7 @@ function initContactForm() {
 }
 
 /* --------------------------------------------------------------------------
-   6. Strategy Call Modal
+   7. Strategy Call Modal
    -------------------------------------------------------------------------- */
 function initStrategyModal() {
   const modal = document.getElementById('strategy-modal');
@@ -231,7 +266,7 @@ function initStrategyModal() {
           <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
           <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
         </svg>
-        Securing Your Call Slot...
+        Securing Your Strategy Session...
       `;
 
       setTimeout(() => {
@@ -258,7 +293,7 @@ function initStrategyModal() {
 }
 
 /* --------------------------------------------------------------------------
-   7. Animated Stats Counters
+   8. Animated Stats Counters
    -------------------------------------------------------------------------- */
 function initAnimatedCounters() {
   const counters = document.querySelectorAll('.counter-val');
@@ -300,7 +335,7 @@ function initAnimatedCounters() {
 }
 
 /* --------------------------------------------------------------------------
-   8. Growth & ROI Calculator
+   9. Growth & ROI Calculator (INR Currency)
    -------------------------------------------------------------------------- */
 function initRoasCalculator() {
   const spendSlider = document.getElementById('calc-spend');
@@ -317,7 +352,7 @@ function initRoasCalculator() {
   if (!spendSlider || !roasSlider) return;
 
   function formatCurrency(num) {
-    return '$' + Math.round(num).toLocaleString('en-US');
+    return '₹' + Math.round(num).toLocaleString('en-IN');
   }
 
   function updateCalculator() {
@@ -328,7 +363,7 @@ function initRoasCalculator() {
     if (roasValDisplay) roasValDisplay.textContent = currentRoas.toFixed(1) + 'x';
 
     // Projected ROAS model
-    const targetRoas = Math.min(6.5, Math.max(currentRoas + 1.2, currentRoas * 1.55));
+    const targetRoas = Math.min(6.5, Math.max(currentRoas + 1.3, currentRoas * 1.55));
 
     if (targetRoasDisplay) targetRoasDisplay.textContent = targetRoas.toFixed(1) + 'x';
 
